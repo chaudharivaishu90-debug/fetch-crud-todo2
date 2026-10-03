@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>firebase Crud Todo 3</title>
+    <style>
+        .spinner{position:fixed;
+        inset:0;
+        left:0;
+        top:0;
+        width:100%;
+        height:100vh;
+        background-color;rgb(255,  255, 255, .8);
+        display:flex;
+        justify-content:center;
+        align-items:center;}
+
+
+    </style>
+   </head>
+   <body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <div class="card my-card">
+                    <div class="card-header text-center"><h3 class="m-0"><i class="fa-solid fa-shop"></i>Grocery Items<i class="fa-solid fa-shop"></i></h3></div>
+                        <div class="card-body">
+                            <form action="" class="Myform" id="Myform">
+                                <h4 class="m-0 text-center">Add Products</h4>
+                                <div class="form-group d-flex align-items-center">
+                                    
+                                    <input type="text" class="form-control" id="product">
+                                    <button type="submit"class="btn btn-sm  btn-danger ml-2" id="AddBtn">+Add</button>
+                                    <button type="button" class="btn btn-sm btn-dark d-none ml-2" id="UpdBtn">Update</button>
+                                </div>
+
+                            </form>
+                            <ul class="list-group" id="groceryConatiner">
+                                <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>Sunflower oil</strong>
+                                    <div>
+                                    <i class="fa-regular fa-pen-to-square fa-2x text-primary"></i>
+                                    <i class="fa-solid fa-trash-can fa-2x text-danger"></i>
+                                        </div>
+                                </li> -->
+                            </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="spinner d-none" id="spinner">
+    <div class="spinner-border text-info" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
